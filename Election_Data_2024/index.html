@@ -100,28 +100,39 @@
     <div class="container-fluid">
         <div class="container">
            <div class="row">
-                <div class=" col-md-4 panel-body">
+                <div class="col-sm-12 col-md-3 panel-body">
                     <div class="dropdown header_year">
                         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Year</button>
                         <ul class="dropdown-menu year_dropdown" role="menu">
                             <li data-year="2024" class="2024_id"><a href="?year=2024#overall_view">2024 results</a></li>
                             <li data-year="2019" class="2019_id"><a href="?year=2019#overall_view">2019 results</a></li>
-                            <li data-year="2014" class="2014_id"><a href="?year=2014#overall_view">2014 results</a></li>                                
+                            <li data-year="2014" class="2014_id"><a href="?year=2014#overall_view">2014 results</a></li>
                             <li data-year="2009" class="2009_id"><a href="?year=2009#overall_view">2009 results</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class=" col-md-8 panel-body">
-                    <p class="form-inline header_form">
-                    <label value="state_val" class="text_label" style="margin-top:10px!important">States / UTs : </label>
-                    <select multiple="multiple" id="state_val_id" class="select_state" style="margin-top:10px!important"></select>&nbsp;&nbsp;
-                    <label value="category_val" class="text_label" style="margin-top:10px!important">Category : </label>
-                    <select multiple="multiple" id="category_val_id" class="select_category" style="margin-top:10px!important" ></select>&nbsp;&nbsp;
-                    <input type="button" value="submit" class="state_filter" style="width: 80px!important;margin:10px!important;"></input> 
-                    </p>
+                <div class="col-sm-12 col-md-9 panel-body">
+                    <div class="col-md-5 col-sm-12">
+                        <p class="form-inline header_form" style="text-align:right">
+                            <label value="state_val" class="text_label" style="margin-top:10px!important;">States / UTs : </label>
+                            <select multiple="multiple" id="state_val_id" class="select_state" style="margin-top:10px!important;width:210px!important;"></select>&nbsp;&nbsp;
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <p class="form-inline header_form" style="text-align:right">
+                            <label value="category_val" class="text_label" style="margin-top:10px!important;">Category : </label>
+                            <select multiple="multiple" id="category_val_id" class="select_category" style="margin-top:10px!important;width:210px!important;" ></select>&nbsp;&nbsp;
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <p class="form-inline header_form" style="text-align:right">
+                            <input type="button" value="submit" class="state_filter" style="width: 80px!important;margin:10px!important;"></input> 
+                        </p>
+                    </div>
                 </div>
            </div>
         </div>
+    </div>
 
     <div id="overall_view">
     <div class="container-fluid">
